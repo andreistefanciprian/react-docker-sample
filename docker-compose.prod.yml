@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  appt-prod:
+    container_name: appt
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - 80:80
